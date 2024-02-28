@@ -21,7 +21,7 @@ extern "C" {
 /**
  * \file pheap.h
  * \defgroup util_pheap pheap
- * Pairing Heap Implementation
+ * \brief Pairing Heap Implementation
  * \ingroup pico_util
  *
  * pheap defines a simple pairing heap. The implementation simply tracks array indexes, it is up to
