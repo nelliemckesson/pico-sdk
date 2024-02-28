@@ -11,7 +11,7 @@
  *  \defgroup async_context_freertos async_context_freertos
  *  \ingroup pico_async_context
  *  
- * async_context_freertos provides an implementation of \ref async_context that handles asynchronous
+ * \brief async_context_freertos provides an implementation of \ref async_context that handles asynchronous
  * work in a separate FreeRTOS task.
  */
 #include "pico/async_context.h"

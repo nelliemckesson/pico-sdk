@@ -11,7 +11,7 @@
  *  \defgroup async_context_threadsafe_background async_context_threadsafe_background
  *  \ingroup pico_async_context
  *  
- * async_context_threadsafe_background provides an implementation of \ref async_context that handles asynchronous
+ * \brief async_context_threadsafe_background provides an implementation of \ref async_context that handles asynchronous
  * work in a low priority IRQ, and there is no need for the user to poll for work.
  *
  * \note The workers used with this async_context MUST be safe to call from an IRQ.
