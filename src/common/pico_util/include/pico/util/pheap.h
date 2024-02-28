@@ -53,7 +53,7 @@ typedef struct pheap_node {
 } pheap_node_t;
 
 /**
- * A user comparator function for nodes in a pairing heap.
+ * \brief A user comparator function for nodes in a pairing heap.
  *
  * \return true if a < b in natural order. Note this relative ordering must be stable from call to call.
  */
@@ -71,7 +71,7 @@ typedef struct pheap {
 } pheap_t;
 
 /**
- * Create a pairing heap, which effectively maintains an efficient sorted ordering
+ * \brief Create a pairing heap, which effectively maintains an efficient sorted ordering
  * of nodes. The heap itself stores no user per-node state, it is expected
  * that the user maintains a companion array. A comparator function must
  * be provided so that the heap implementation can determine the relative ordering of nodes
@@ -86,13 +86,13 @@ typedef struct pheap {
 pheap_t *ph_create(uint max_nodes, pheap_comparator comparator, void *user_data);
 
 /**
- * Removes all nodes from the pairing heap
+ * \brief Removes all nodes from the pairing heap
  * \param heap the heap
  */
 void ph_clear(pheap_t *heap);
 
 /**
- * De-allocates a pairing heap
+ * \brief De-allocates a pairing heap
  *
  * Note this method must *ONLY* be called on heaps created by ph_create()
  * \param heap the heap
@@ -135,7 +135,7 @@ static pheap_node_id_t ph_merge_nodes(pheap_t *heap, pheap_node_id_t a, pheap_no
 }
 
 /**
- * Allocate a new node from the unused space in the heap
+ * \brief Allocate a new node from the unused space in the heap
  *
  * \param heap the heap
  * \return an identifier for the node, or 0 if the heap is full
@@ -151,7 +151,7 @@ static inline pheap_node_id_t ph_new_node(pheap_t *heap) {
 }
 
 /**
- * Inserts a node into the heap.
+ * \brief Inserts a node into the heap.
  *
  * This method inserts a node (previously allocated by ph_new_node())
  * into the heap, determining the correct order by calling
@@ -170,7 +170,7 @@ static inline pheap_node_id_t ph_insert_node(pheap_t *heap, pheap_node_id_t id) 
 }
 
 /**
- * Returns the head node in the heap, i.e. the node
+ * \brief Returns the head node in the heap, i.e. the node
  * which compares first, but without removing it from the heap.
  *
  * \param heap the heap
@@ -181,7 +181,7 @@ static inline pheap_node_id_t ph_peek_head(pheap_t *heap) {
 }
 
 /**
- * Remove the head node from the pairing heap. This head node is
+ * \brief Remove the head node from the pairing heap. This head node is
  * the node which compares first in the logical ordering provided
  * by the comparator.
  *

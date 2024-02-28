@@ -70,7 +70,7 @@ bool weak_raw_vprintf(const char *fmt, va_list args);
 #endif
 
 /**
- * printf with output function
+ * \brief printf with output function
  * You may use this as dynamic alternative to printf() with its fixed _putchar() output
  * \param out An output function which takes one character and an argument pointer
  * \param arg An argument pointer for user data passed to output function

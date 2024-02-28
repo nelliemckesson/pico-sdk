@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     core_cm0plus.h
- * @brief    CMSIS Cortex-M0+ Core Peripheral Access Layer Header File
+ * \brief    CMSIS Cortex-M0+ Core Peripheral Access Layer Header File
  * @version  V5.0.9
  * @date     21. August 2019
  ******************************************************************************/

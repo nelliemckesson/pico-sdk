@@ -1,6 +1,6 @@
 /*************************************************************************//**
  * @file     RP2040.h
- * @brief    CMSIS-Core(M) Device Peripheral Access Layer Header File for
+ * \brief    CMSIS-Core(M) Device Peripheral Access Layer Header File for
  *           Device RP2040
  * @version  V1.0.0
  * @date     5. May 2021
