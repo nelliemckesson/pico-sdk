@@ -17,7 +17,7 @@ extern "C" {
 /** \file pico/i2c_slave.h
  * \defgroup pico_i2c_slave pico_i2c_slave
  *
- * Functions providing an interrupt driven I2C slave interface.
+ * \brief Functions providing an interrupt driven I2C slave interface.
  *
  * This I2C slave helper library configures slave mode and hooks the relevant I2C IRQ
  * so that a user supplied handler is called with enumerated I2C events.

@@ -35,7 +35,7 @@
 /** \file printf.h
  *  \defgroup pico_printf pico_printf
  *
- * Compact replacement for printf by Marco Paland (info@paland.com)
+ * \brief Compact replacement for printf by Marco Paland (info@paland.com)
  */
 
 #ifdef __cplusplus

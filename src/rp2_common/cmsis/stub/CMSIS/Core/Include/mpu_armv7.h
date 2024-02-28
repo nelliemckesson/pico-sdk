@@ -1,6 +1,6 @@
 /******************************************************************************
  * @file     mpu_armv7.h
- * @brief    CMSIS MPU API for Armv7-M MPU
+ * \brief    CMSIS MPU API for Armv7-M MPU
  * @version  V5.1.1
  * @date     10. February 2020
  ******************************************************************************/
@@ -167,18 +167,18 @@
 #define ARM_MPU_CACHEP_WB_WRA 1U
 
 /**
-* MPU Memory Access Attribute write-through, no write allocate policy.
+* \brief MPU Memory Access Attribute write-through, no write allocate policy.
 */
 #define ARM_MPU_CACHEP_WT_NWA 2U
 
 /**
-* MPU Memory Access Attribute write-back, no write allocate policy.
+* \brief MPU Memory Access Attribute write-back, no write allocate policy.
 */
 #define ARM_MPU_CACHEP_WB_NWA 3U
 
 
 /**
-* Struct for a single MPU Region
+* \brief Struct for a single MPU Region
 */
 typedef struct {
   uint32_t RBAR; //!< The region base address register value (RBAR)

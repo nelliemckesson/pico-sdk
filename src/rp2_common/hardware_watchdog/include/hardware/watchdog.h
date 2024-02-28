@@ -13,7 +13,7 @@
 /** \file hardware/watchdog.h
  *  \defgroup hardware_watchdog hardware_watchdog
  *
- * Hardware Watchdog Timer API
+ * \brief Hardware Watchdog Timer API
  *
  * Supporting functions for the Pico hardware watchdog timer.
  *

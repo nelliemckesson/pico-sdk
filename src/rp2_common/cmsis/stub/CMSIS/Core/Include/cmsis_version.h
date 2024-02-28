@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     cmsis_version.h
- * @brief    CMSIS Core(M) Version definitions
+ * \brief    CMSIS Core(M) Version definitions
  * @version  V5.0.4
  * @date     23. July 2019
  ******************************************************************************/

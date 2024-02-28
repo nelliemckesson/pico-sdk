@@ -15,7 +15,7 @@
 /** \file pico/flash.h
  *  \defgroup pico_flash pico_flash
  *
- * High level flash API
+ * \brief High level flash API
  *
  * Flash cannot be erased or written to when in XIP mode. However the system cannot directly access memory in the flash
  * address space when not in XIP mode.

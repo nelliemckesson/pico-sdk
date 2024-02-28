@@ -198,7 +198,7 @@ static inline pheap_node_id_t ph_peek_head(pheap_t *heap) {
 pheap_node_id_t ph_remove_head(pheap_t *heap, bool free);
 
 /**
- * Remove the head node from the pairing heap. This head node is
+ * \brief Remove the head node from the pairing heap. This head node is
  * the node which compares first in the logical ordering provided
  * by the comparator.
  *
@@ -214,7 +214,7 @@ static inline pheap_node_id_t ph_remove_and_free_head(pheap_t *heap) {
 }
 
 /**
- * Remove and free an arbitrary node from the pairing heap. This is a more
+ * \brief Remove and free an arbitrary node from the pairing heap. This is a more
  * costly operation than removing the head via ph_remove_and_free_head()
  *
  * @param heap the heap
@@ -224,7 +224,7 @@ static inline pheap_node_id_t ph_remove_and_free_head(pheap_t *heap) {
 bool ph_remove_and_free_node(pheap_t *heap, pheap_node_id_t id);
 
 /**
- * Determine if the heap contains a given node. Note containment refers
+ * \brief Determine if the heap contains a given node. Note containment refers
  * to whether the node is inserted (ph_insert_node()) vs allocated (ph_new_node())
  *
  * @param heap the heap
@@ -237,7 +237,7 @@ static inline bool ph_contains_node(pheap_t *heap, pheap_node_id_t id) {
 
 
 /**
- * Free a node that is not currently in the heap, but has been allocated
+ * \brief Free a node that is not currently in the heap, but has been allocated
  *
  * @param heap the heap
  * @param id the id of the node
@@ -255,7 +255,7 @@ static inline void ph_free_node(pheap_t *heap, pheap_node_id_t id) {
 }
 
 /**
- * Print a representation of the heap for debugging
+ * \brief Print a representation of the heap for debugging
  *
  * @param heap the heap
  * @param dump_key a method to print a node value
@@ -264,7 +264,7 @@ static inline void ph_free_node(pheap_t *heap, pheap_node_id_t id) {
 void ph_dump(pheap_t *heap, void (*dump_key)(pheap_node_id_t id, void *user_data), void *user_data);
 
 /**
- * Initialize a statically allocated heap (ph_create() using the C heap).
+ * \brief Initialize a statically allocated heap (ph_create() using the C heap).
  * The heap member `nodes` must be allocated of size max_nodes.
  *
  * @param heap the heap
@@ -275,7 +275,7 @@ void ph_dump(pheap_t *heap, void (*dump_key)(pheap_node_id_t id, void *user_data
 void ph_post_alloc_init(pheap_t *heap, uint max_nodes, pheap_comparator comparator, void *user_data);
 
 /**
- * Define a statically allocated pairing heap. This must be initialized
+ * \brief Define a statically allocated pairing heap. This must be initialized
  * by ph_post_alloc_init
  */
 #define PHEAP_DEFINE_STATIC(name, _max_nodes) \

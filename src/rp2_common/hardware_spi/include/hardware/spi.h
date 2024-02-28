@@ -23,7 +23,7 @@ extern "C" {
 /** \file hardware/spi.h
  *  \defgroup hardware_spi hardware_spi
  *
- * Hardware SPI API
+ * \brief Hardware SPI API
  *
  * RP2040 has 2 identical instances of the Serial Peripheral Interface (SPI) controller.
  *

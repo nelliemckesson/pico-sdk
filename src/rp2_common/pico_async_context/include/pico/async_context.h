@@ -7,7 +7,7 @@
 /** \file pico/async_context.h
  *  \defgroup pico_async_context pico_async_context
  *
- * An \ref async_context provides a logically single-threaded context for performing work, and responding
+ * \brief An \ref async_context provides a logically single-threaded context for performing work, and responding
  * to asynchronous events. Thus an async_context instance is suitable for servicing third-party libraries
  * that are not re-entrant.
  *
