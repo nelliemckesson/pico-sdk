@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     cmsis_compiler.h
- * \brief    CMSIS compiler generic header file
+ * @brief    CMSIS compiler generic header file
  * @version  V5.1.0
  * @date     09. October 2018
  ******************************************************************************/
