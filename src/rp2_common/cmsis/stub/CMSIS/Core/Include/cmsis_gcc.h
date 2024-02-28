@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     cmsis_gcc.h
- * \brief    CMSIS compiler GCC header file
+ * @brief    CMSIS compiler GCC header file
  * @version  V5.3.0
  * @date     26. March 2020
  ******************************************************************************/
